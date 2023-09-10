@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <h1>SPLI<br />TTER</h1>
+    <div class="card">
+      <!-- BILL SECTION -->
+      <div class="bill">
+        <h4>Bill</h4>
+        <div >
+          <input
+            type="number"
+            id="totalBill"            
+            class="total_bill input-image"            
+          />
+        </div>
+
+        <p>Select Tip %</p>
+        <div class="tip_amounts">
+          <button id="percent-5">5%</button>
+          <button id="percent-10">10%</button>
+          <button id="percent-15">15%</button>
+          <button id="percent-25">25%</button>
+          <button id="percent-50">50%</button>
+          <button id="percent-custom">Custom</button>
+        </div>
+        <p>Number of People</p>
+        <div id="input_people">
+          <input
+            type="number"
+            id="numPeople"
+            
+            class="num_of_people input-image"
+          />
+        </div>
+      </div>
+
+      <!-- RESULT SECTION -->
+      <div class="results">
+        <div class="labels">
+          <div class="tip_label">
+            <div class="result_label">
+              <p class="result_label_top">Tip Amount</p>
+              <p class="result_label_bottom">/ person</p>
+            </div>
+            <div class="tip_amount">
+              <span>$</span>
+              <p id="tip_total"></p>
+            </div>
+          </div>
+
+          <div class="tip_label">
+            <div class="result_label">
+              <p class="result_label_top">Total</p>
+              <p class="result_label_bottom">/ person</p>
+            </div>
+            <div class="tip_amount">
+              <span>$</span>
+              <p id="total_per_person"></p>
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+          <button id="reset">RESET</button>
+        </div>
+      </div>
+      <!-- end results -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

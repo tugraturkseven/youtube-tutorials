@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+:root {
+  --active-green-color: hsl(183, 69%, 40%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  letter-spacing: 0.8rem;
+  color: hsl(186, 14%, 43%);
+}
+body {
+  font-family: "Space+Mono", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(185, 41%, 84%);
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  max-width: 780px;
+  background-color: hsl(0, 0%, 99%);
+  border-radius: 20px;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* bill section */
+.bill {
+  width: 360px;
+  padding: 20px;
+}
+
+.tip_amounts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.tip_amounts > button {
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+  padding: 8px 20px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.tip_amounts > button:hover {
+  background-color: var(--active-green-color);
+}
+
+#percent-custom {
+  background-color: hsl(189, 41%, 95%);
+  color: hsl(186, 14%, 43%);
+  border: none;
+}
+
+.input-image {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  font-size: 16px;
+  background-color: hsl(189, 41%, 95%);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  outline: none;
+  text-align: right;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  font-size: 1.3rem;
+}
+
+input.total_bill {
+  background-image: url("./images/icon-dollar.svg");
+}
+
+input.num_of_people {
+  background-image: url("./images/icon-person.svg");
+}
+
+/* result section */
+.results {
+  width: 360px;
+  background-color: hsl(183, 100%, 15%);
+  padding: 35px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 80%;
+}
+
+.tip_label {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.tip_label p {
+  margin: 0;
+}
+
+.tip_amount {
+  display: flex;
+}
+
+.tip_amount {
+  font-size: 2rem;
+  color: var(--active-green-color);
+  letter-spacing: 1px;
+}
+
+.tip_amount span {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+.result_label_top {
+  color: white;
+  letter-spacing: 2px;
+}
+
+.result_label_bottom {
+  color: hsl(184, 14%, 60%);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+/* button */
+#reset {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--very-dark-cyan);
+  letter-spacing: 0.2rem;
+  background-color: var(--active-green-color);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+  .card {
+    flex-direction: column;
+  }
+  .results {
+    width: 90%;
+  }
+
+  .bill {
+    width: 90%;
+    margin: auto;
+  }
+  .tip_amounts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
