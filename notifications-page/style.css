@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: hsl(210, 60%, 98%);
+}
+
+/* Defining images and font sizes */ 
+
+img {
+    width: 100%; 
+}
+
+h1 {
+    font-size: 1.5rem; 
+}
+
+div, p {
+    font-size: .875rem; 
+}
+
+/* Defining main and section elements */ 
+
+main {
+    min-height: 100vh; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.comments {
+    display: flex; 
+    flex-direction: column;
+    gap: .625rem; 
+    padding: 1rem; 
+    max-width: 45.625rem; 
+}
+
+/* Defining top row of the notifications card */ 
+
+.top-row {
+    display: flex; 
+    align-items: center;
+    gap: .3125rem; 
+    margin-bottom: 1.25rem; 
+}
+
+.unread-counter {
+    padding: .125rem .4375rem; 
+    border-radius: .25rem; 
+    background: blue; 
+    color: white; 
+}
+
+.mark-all {
+    margin-left: auto; 
+    cursor: pointer; 
+    transition: all 0.2s ease;
+}
+
+.mark-all:hover {
+    color: hsl(219, 85%, 26%); 
+}
+
+/* Defining the styling of each comment and its child elements */ 
+
+.comment.unread {
+    border: 1px solid black; 
+}
+
+.comment {
+    display: flex; 
+    padding: 1rem;  
+    gap: .8125rem; 
+    border: 1px solid gray; 
+    border-radius: .625rem; 
+}
+
+.comment:hover {
+    cursor: pointer; 
+    border: 1px solid black; 
+} 
+
+.face, .picture {
+    max-width: 2.5rem; 
+    min-width: 2.5rem; 
+}
+
+.picture {
+    margin-left: auto; 
+}
+
+.desc {
+    display: flex; 
+    flex-direction: column;
+    gap: .3125rem; 
+}
+
+.message {
+    padding: 1rem; 
+    border: 1px solid gray; 
+}
+
+.message:hover {
+    background-color: hsl(211, 68%, 94%); 
+}
+
+
+
+.name {
+    font-weight: 800; 
+    transition: all 0.2s ease; 
+    cursor: pointer; 
+}
+
+.name:hover {
+    color:hsl(219, 85%, 26%); 
+}
+
+a {
+    text-decoration: none;
+    color: hsl(219, 85%, 26%); 
+}
+
+.unread {
+    background-color: hsl(211, 68%, 94%); 
+}
+
+.red {
+    width: .5rem; 
+    height: .5rem; 
+    border-radius: 50%; 
+    background-color: hsl(1, 90%, 64%);
+    display: inline-block; 
+    margin-left: .1875rem; 
+    opacity: 0; 
+}
+
+.red.visible {
+    opacity: 1; 
+}
+
+.hovered {
+    background-color: hsl(211, 68%, 94%); 
+}
+
+@media screen and (min-width: 500px) {
+    .comments {
+        padding: 2rem; 
+    }
+    div, p {
+        font-size: 1rem; 
+    }
+}

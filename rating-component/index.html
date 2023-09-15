@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/icon-star.svg" type="image/x-icon">
+    <title>Interactive rating component</title>
+</head>
+
+<body class="bg-[#141519] flex justify-center items-center w-[100%] h-[100vh]">
+    <div id="principal"
+        class="block bg-[#212832] flex flex-col w-[80%] h-[65%] rounded-[40px] 2xl:w-[23%] sm:w-[50%] sm:h-[65%] md:w-[40%] md:h-[60%]  xl:w-[30%]  2xl:h-[40%] px-8 pt-8">
+        <div class="flex justify-center items-center w-[10%] h-[10%] rounded-[50%] bg-[#272E38] mb-6">
+            <img class="w-[45%]" src="./images/icon-star.svg" alt="">
+        </div>
+        <div class="flex flex-col mb-6">
+            <h1 class="text-white text-start font-semibold text-2xl mb-4">How did we do?</h1>
+            <p class="text-white/60 text-start">Please let us know how we did with your support request. All feedback is
+                appreciated to help us improve our offering!</p>
+        </div>
+        <div class="flex justify-evenly items-center mb-6">
+            <button id="button1"
+                class="text-white/70 px-[6%] py-[4%]  rounded-[50%] bg-[#272E38] hover:bg-[#f97817]  focus:bg-[#7e8798] hover:text-white focus:text-white">1</button>
+            <button id="button2"
+                class="text-white/70 px-[6%] py-[4%]  rounded-[50%] bg-[#272E38] hover:bg-[#f97817]  focus:bg-[#7e8798] hover:text-white focus:text-white">2</button>
+            <button id="button3"
+                class="text-white/70 px-[6%] py-[4%]  rounded-[50%] bg-[#272E38] hover:bg-[#f97817]  focus:bg-[#7e8798] hover:text-white focus:text-white">3</button>
+            <button id="button4"
+                class="text-white/70 px-[6%] py-[4%]  rounded-[50%] bg-[#272E38] hover:bg-[#f97817]  focus:bg-[#7e8798] hover:text-white focus:text-white">4</button>
+            <button id="button5"
+                class="text-white/70 px-[6%] py-[4%]  rounded-[50%] bg-[#272E38] hover:bg-[#f97817]  focus:bg-[#7e8798] hover:text-white focus:text-white">5</button>
+        </div>
+        <div>
+            <button id="buttonSubmit"
+                class="text-white/70 font-semibold px-[6%] py-[4%] w-full rounded-[40px] bg-[#f97817] hover:bg-[#fff] hover:text-[#f97817] ">Submit</button>
+        </div>
+
+    </div>
+    <div id="secundario"
+        class="hidden bg-[#212832] flex flex-col w-[80%] h-[65%] rounded-[40px] 2xl:w-[23%] sm:w-[50%] sm:h-[65%] md:w-[40%] md:h-[60%]  xl:w-[30%]  2xl:h-[40%] px-8 pt-8">
+        <div class="flex justify-center items-center  mb-6">
+            <img class=" w-[45%]    " src="./images/illustration-thank-you.svg" alt="">
+        </div>
+        <div class="flex justify-center  mb-6">
+            <p id="punctuation" class="text-[#f97817] text-center text-sm bg-[#272E38] w-[60%] rounded-[40px]">Lorem
+                ipsum dolor sit amet.</p>
+        </div>
+        <div class="flex justify-evenly items-center mb-6">
+            <p class="text-white text-center font-semibold text-2xl">Thank you!</p>
+        </div>
+        <div>
+            <p class="text-white/60 text-center">We appreciate you taking the time to give a rating. If you ever need
+                more support, don’t hesitate to get in touch!</p>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
