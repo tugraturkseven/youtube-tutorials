@@ -1,0 +1,23 @@
+body {
+    background-color: #B2C8DF;
+}
+
+#time {
+    color: #F0EBE3;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25rem;
+}
+
+.clock {
+    background-color: #0F0E0E;
+    padding: 0rem 3rem;
+    border-radius: 2rem;
+    border: 0.5rem groove;
+    border-color: #37E2D5;
+}

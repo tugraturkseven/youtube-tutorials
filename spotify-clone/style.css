@@ -1,0 +1,185 @@
+html {
+    background-color: white;
+    font-family: 'Circular Std', sans-serif;
+}
+
+.spotify-logo {
+    display: block;
+    margin: auto;
+    width: 150px;
+    padding: 16px 0px;
+}
+
+#first-line {
+    opacity: 0.5;
+}
+
+.buttons {
+    padding: 8px 0px;
+    display: block;
+    text-align: center;
+}
+
+#facebook {
+    display: block;
+    margin: 8px auto;
+    background-color: rgb(59, 89, 152);
+    color: white;
+    font-weight: 600;
+    width: 330px;
+    height: 35px;
+    border: none;
+    border-radius: 16px;
+}
+
+#apple {
+    display: block;
+    margin: 8px auto;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    width: 330px;
+    height: 35px;
+    border: none;
+    border-radius: 16px;
+}
+
+#google {
+    display: block;
+    margin: 8px auto;
+    background-color: white;
+    color: var(--text-subdued, #6a6a6a);
+    width: 330px;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 16px;
+
+}
+
+#facebook:hover {
+    border: 1px solid black;
+}
+
+#google:hover {
+    border: 1px solid black;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 350px;
+}
+
+#second,
+#third {
+    width: 150px;
+}
+
+#or {
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 16px;
+}
+
+.credentials {
+    display: block;
+    width: 350px;
+    margin: auto;
+}
+
+#email-label {
+    display: block;
+    font-size: 14px;
+    padding: 4px 0px;
+}
+
+#email {
+    display: block;
+    width: 330px;
+    padding: 12px 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+#password-label {
+    display: block;
+    font-size: 14px;
+    padding: 4px 0px;
+}
+
+#password {
+    display: block;
+    width: 330px;
+    padding: 12px 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+#forgot {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+#forgot:hover {
+    text-decoration: underline;
+}
+
+#remember {
+    margin: 16px 0px;
+}
+
+#remember-label {
+    font-weight: 300;
+    padding: 0px 8px;
+    font-size: 12px;
+}
+
+#log-in {
+    display: block;
+    float: right;
+    margin: 8px 4px;
+    background-color: var(--background-base, #1ed760);
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 16px;
+    font-weight: 600;
+}
+
+#log-in:hover {
+    scale: 1.05;
+    background-color: var(--background-base, #2be66c);
+}
+
+#have-account {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    padding: 16px;
+}
+
+#footer-hr {
+    width: 350px;
+    margin: 16px auto;
+}
+
+#sign-up {
+    display: block;
+    margin: 8px auto;
+    background-color: white;
+    color: var(--text-subdued, #6a6a6a);
+    width: 330px;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 16px;
+}
+
+#sign-up:hover {
+    border: 1px solid black;
+}

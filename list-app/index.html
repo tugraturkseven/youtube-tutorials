@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="add-container">
+        <button id="addBtn" onclick="showModal(event)">+</button>
+        <h1 id="add-label">OTEL EKLE</h1>
+    </div>
+    <div class="modal" id="myModal">
+        <div id="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="hideModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <label for="input-value" id="name-label">Otel adı:</label>
+                <input type="text" placeholder="Otel adı giriniz" id="input-value">
+                <button id="addOtel" onclick="addItem()">EKLE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="delete-modal">
+
+        <div id="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="hideModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p id="delete-modal-p"><span id="delete-otel-name"></span>'i silmek istediğinizden emin misiniz?</p>
+                <div class="delete-modal-buttons">
+                    <button id="delete" onclick="deleteItem()">OTELİ SİL</button>
+                    <button id="cancel" onclick="hideModal()">VAZGEÇ</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="sort-container">
+        <select name="" id="selection" onchange="handleSort()">
+            <option value="" disabled selected>&#8593;&#8595; Sıralama</option>
+            <option value="ascending">Artan</option>
+            <option value="descending">Azalan</option>
+        </select>
+    </div>
+    <div class="list-container">
+        <ul id="ulist">
+
+        </ul>
+    </div>
+    <div class="pagination-number">
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

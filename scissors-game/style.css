@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: rgb(12, 12, 12);
+}
+
+.container {
+    width: 90%;
+
+}
+
+.score-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#user {
+    float: left;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+}
+
+
+#computer {
+    float: right;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+img {
+    width: 150px;
+    margin: 50% auto;
+}
+
+img:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#result {
+    font-style: italic;
+}

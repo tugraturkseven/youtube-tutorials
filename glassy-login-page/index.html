@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Glassy Login Page</title>
+    <style>
+        html {
+            background-image: url(img/background.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed fixed;
+            background-size: cover;
+            height: 100%;
+            overflow: hidden;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .container {
+            display: block;
+            text-align: center;
+            margin: auto;
+            margin-top: 150px;
+            width: 400px;
+            border: 1px solid transparent;
+            border-radius: 16px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(2px);
+            box-shadow: 0 0 .25rem rgba(255, 255, 255, 0.5), -.125rem -.125rem 1rem rgba(255, 255, 255, 0.5), .125rem .125rem 1rem rgba(184, 121, 255, 0.5);
+        }
+
+        #avatar {
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            margin-top: 16px;
+
+        }
+
+        label {
+            display: block;
+            margin-top: 16px;
+            margin-bottom: 8px;
+            font-family: Helvetica;
+            color: white;
+            text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        #user,
+        #password {
+            display: block;
+            margin: auto;
+            width: 200px;
+            border: 1px solid transparent;
+            border-bottom: 1px solid white;
+            color: white;
+            background: transparent;
+            font-family: Roboto;
+        }
+
+        #user:hover,
+        #password:hover {
+            cursor: default;
+        }
+
+
+        #remember {
+            display: block;
+            margin-top: 16px;
+            font-family: Montserrat;
+            color: white;
+            text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+        }
+
+
+        #login {
+            align-items: center;
+            background: #FFFFFF;
+            border: 0 solid #E2E8F0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            box-sizing: border-box;
+            color: #1A202C;
+            display: block;
+            margin: 16px auto;
+            font-family: Montserrat;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 24px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        #forget {
+            display: block;
+            font-family: lemon milk;
+            color: white;
+            text-decoration: none;
+            padding: 16px;
+            text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/avatar.png" alt="" id="avatar">
+        <label for="username">Username or Email</label>
+        <input type="text" id="user">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <span id="remember"> <input type="checkbox">Remember Me</span>
+        <button id="login">Sign in</button>
+        <a href="#" id="forget">Forget the password?</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+html {
+    box-sizing: border-box;
+    font-family: Segoe UI;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.sidebar {
+    text-align: left;
+    width: 210px;
+    height: 100%;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(32, 33, 35);
+    z-index: 1;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    padding: 0.75em 0.5em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 0.5em;
+    align-items: baseline;
+}
+
+.sidebar svg {
+    padding-right: 1em;
+}
+
+.sidebar a:hover {
+    background-color: #343541;
+    transition: 0.25s ease-out;
+}
+
+.main {
+    position: absolute;
+    left: 210px;
+    width: calc(100% - 210px);
+    height: 100%;
+    background-color: #343541;
+    top: 0
+}
+
+.content {
+    display: block;
+    margin: auto;
+    margin-top: 10em;
+    max-width: 750px;
+}
+
+#heading {
+    color: #ECECF1;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.items svg {
+    color: white;
+    margin: auto;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+}
+
+.examples,
+.capabilities,
+.limitations {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin: 0.5em;
+    width: 250px;
+    height: 250px;
+}
+
+.label {
+    display: block;
+    font-size: 18px;
+}
+
+.btnExamples {
+    display: block;
+    background-color: #3E3F4B;
+    color: white;
+    width: 230px;
+    height: 64px;
+    border: none;
+    border-radius: 8px;
+    padding: 1em 0.75em;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+.btnExamples:hover {
+    background-color: #202123;
+    transition: 0.2s ease-out;
+}
+
+
+
+.list {
+    display: block;
+    font-size: 16px;
+    width: 214px;
+    height: 53px;
+    background-color: #3E3F4B;
+    border-radius: 8px;
+    padding: 0.35em 0.5em;
+    margin: 13.3px 0;
+}
+
+#harmful {
+    height: 70px;
+}
+
+.command {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    background-color: #40414F;
+    width: 44em;
+    margin: auto;
+    border-radius: 8px;
+    padding: 8px 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#cmd {
+    width: 650px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+#cmd:focus {
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+
+#search {
+    float: right;
+    rotate: 90deg;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    color: #ACACBE;
+    align-items: baseline;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+#search:hover {
+    background-color: #202123;
+    transition: 0.2s ease-out;
+}
+
+footer {
+    color: #9A9B90;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 16px;
+    text-align: center;
+    font-size: 13px;
+}

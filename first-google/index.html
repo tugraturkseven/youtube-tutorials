@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        #logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 10%;
+            font-size: 72px;
+            height: 175px;
+        }
+
+        p {
+            text-shadow: rgba(0, 0, 0, 0.5) 0px 6px 4px;
+            -webkit-text-stroke: 1px black;
+        }
+
+        #search-bar {
+            background-color: rgb(225, 225, 225);
+            display: block;
+            text-align: center;
+            padding: 8px;
+        }
+
+        #search-label {
+            display: block;
+            font-weight: 700;
+        }
+
+        #search {
+            display: block;
+            margin: auto;
+            width: 300px;
+        }
+
+        #results,
+        #google-search,
+        #feeling-lucky,
+        #subscribe {
+            color: black;
+            border: 1px solid black;
+            border-radius: 16px;
+            background-color: rgb(240, 240, 240);
+            padding: 4px 8px;
+            font-weight: 600;
+        }
+
+        #results {
+            display: inline-flex;
+            margin: auto;
+            width: 76px;
+        }
+
+        #google-search {
+            display: inline-flex;
+            margin: auto;
+        }
+
+        #information {
+            display: block;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        #about {
+            display: block;
+            text-align: center;
+        }
+
+        #about-google {
+            font-size: 32px;
+        }
+
+        #stanford,
+        #linux {
+            display: inline-flex;
+        }
+
+        #updates {
+            display: block;
+            text-align: center;
+            background-color: rgb(225, 225, 225);
+            padding: 8px;
+        }
+
+        #get-google {
+            display: block;
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        #footer {
+            text-align: center;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="logo">
+        <p style="color:blue">G</p>
+        <p style="color:brown">o</p>
+        <p style="color:yellow">o</p>
+        <p style="color:blue">g</p>
+        <p style="color:green">l</p>
+        <p style="color: brown">e</p>
+        <p style="color:blue">!</p>
+    </section>
+    <section id="search-bar">
+        <span id="search-label">Search the web using Google!</span>
+        <input type="text" id="search">
+        <input id="results" type="number" step="1" placeholder="10 results">
+        <button id="google-search">Google Search</button>
+        <button id="feeling-lucky">I'm feeling lucky</button>
+        <span id="information">Index contains ~25 million pages (soon to be much bigger)</span>
+    </section>
+    <section id="about">
+        <h1 id="about-google">
+            <a href="#">About Google!</a>
+        </h1>
+        <h2 id="stanford">
+            <a href="#">
+                Stanford Search
+            </a>
+        </h2>
+        <h2 id="linux">
+            <a href="#">Linux search</a>
+        </h2>
+    </section>
+    <section id="updates">
+        <span id="get-google">
+            Get Google! updates monthly!
+        </span>
+        <input type="text" placeholder="your e-mail" id="email">
+        <button id="subscribe">Subscribe</button>
+        <a href="#">Archive</a>
+    </section>
+    <footer id="footer">
+        Copyright 1997-8 Stanford University
+    </footer>
+</body>
+
+</html>

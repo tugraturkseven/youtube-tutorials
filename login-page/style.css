@@ -1,0 +1,79 @@
+body {
+    background-image: linear-gradient(45deg,
+            hsl(240deg 100% 20%) 0%,
+            hsl(289deg 100% 21%) 11%,
+            hsl(315deg 100% 27%) 22%,
+            hsl(329deg 100% 36%) 33%,
+            hsl(337deg 100% 43%) 44%,
+            hsl(357deg 91% 59%) 56%,
+            hsl(17deg 100% 59%) 67%,
+            hsl(34deg 100% 53%) 78%,
+            hsl(45deg 100% 50%) 89%,
+            hsl(55deg 100% 50%) 100%);
+    background-attachment: fixed;
+    font-family: 'montserrat';
+
+}
+
+.container {
+    display: block;
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+svg {
+    color: white;
+    cursor: pointer;
+    margin: 16px 16px;
+    scale: 1.6;
+    padding-bottom: 16px;
+}
+
+svg:hover {
+    color: rgb(50, 173, 255);
+}
+
+#title {
+    color: white;
+    padding-top: 32px;
+}
+
+#caption {
+    color: gray;
+    font-size: 16px;
+    opacity: 60%;
+}
+
+#forgot {
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+    display: block;
+}
+
+input {
+    display: block;
+    margin: 15px auto;
+    border: 1px solid rgb(50, 173, 255);
+    border-radius: 16px;
+    padding: 8px 24px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+#loginBtn {
+    padding: 8px 32px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(2, 196, 76);
+    border-radius: 16px;
+    display: block;
+    margin: 16px auto;
+    cursor: pointer;
+}

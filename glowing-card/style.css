@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html {
+    background-image: url(img/background.png);
+    background-position: fixed fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Helvetica';
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#card {
+    display: block;
+    text-align: center;
+    border: 1px solid rgba(255, 184, 126, 0.5);
+    border-radius: 8px;
+    width: 80%;
+    padding: 1rem;
+    margin: 5rem auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 .25rem rgba(255, 130, 130, 0.5), -.125rem -.125rem 1rem rgba(255, 142, 29, 0.5), .125rem .125rem 1rem rgba(255, 25, 17, 0.5);
+}
+
+
+#profile {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 100%;
+    image-rendering: optimizeQuality;
+    object-fit: cover;
+}
+
+#name {
+    font-family: 'Lemon Milk';
+    font-size: 2rem;
+    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(254, 131, 25, 1) 35%, rgba(255, 38, 9, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.3px black;
+}
+
+#location {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(230, 230, 230) 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(230, 230, 230);
+}
+
+#pin {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#caption {
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px #000000;
+}
+
+
+#html,
+#css,
+#javascript,
+#bootstrap,
+#react,
+#java {
+    display: inline-flex;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0.25rem 1rem;
+    margin: 0.25rem;
+    font-size: 1.1rem;
+}
+
+#html:hover,
+#css:hover,
+#javascript:hover,
+#bootstrap:hover,
+#react:hover,
+#java:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: aliceblue;
+    transition: 0.4s ease-out;
+    color: black;
+}
+
+
+#social-caption {
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+#social {
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+    margin: 2rem 0;
+}
+
+#youtube,
+#linkedin,
+#twitter,
+#github {
+    color: white;
+    padding: 0rem 0.25rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#youtube:hover,
+#linkedin:hover,
+#twitter:hover,
+#github:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+#buttons {
+    display: flex;
+    margin: 1rem auto;
+    margin-bottom: 1rem;
+}
+
+button {
+    background: linear-gradient(to bottom right, #ef4747, #e0864f);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+button:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+button:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+@media screen and (max-width: 670px) {
+    #profile {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    #name {
+        font-size: 1.3rem;
+    }
+
+    #location {
+        font-size: 1rem;
+    }
+
+    #pin {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    #caption {
+        font-size: 1rem;
+    }
+
+    #html,
+    #css,
+    #javascript,
+    #bootstrap,
+    #react,
+    #java {
+        font-size: 0.5rem;
+    }
+
+    #social-caption {
+        color: white;
+        font-size: 1rem;
+    }
+
+
+    #social {
+        -webkit-transform: scale(3.5);
+        transform: scale(3.5);
+    }
+
+
+    #buttons {
+        display: block;
+    }
+
+    button {
+        font-size: 0.8rem;
+        margin-top: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #profile {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    #name {
+        font-size: 1.3rem;
+    }
+
+    #location {
+        font-size: 1rem;
+    }
+
+    #pin {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    #caption {
+        font-size: 1rem;
+    }
+
+    #html,
+    #css,
+    #javascript,
+    #bootstrap,
+    #react,
+    #java {
+        display: inline-flex;
+        color: white;
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 0.25rem 1rem;
+        margin: 0.25rem;
+        font-size: 0.8rem;
+    }
+
+    #social-caption {
+        color: white;
+        font-size: 1rem;
+    }
+
+
+    #social {
+        -webkit-transform: scale(3.5);
+        transform: scale(3.5);
+    }
+
+
+    #buttons {
+        display: block;
+    }
+
+    button {
+        font-size: 0.8rem;
+        margin-top: 0.75rem;
+    }
+}
